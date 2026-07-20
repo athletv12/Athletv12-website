@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kostenloser Fitness Guide — athletv12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="lang-toggle">
+  <button data-lang="de" class="active" onclick="setLang('de')">DE</button>
+  <button data-lang="en" onclick="setLang('en')">EN</button>
+</div>
+
+<div class="phone">
+  <div class="back-bar">
+    <a href="index.html">&#8249;</a>
+    <span data-de>Kostenloser Fitness Guide</span>
+    <span data-en>Free Fitness Guide</span>
+  </div>
+
+  <img class="hero-photo" src="assets/images/guide.jpg" alt="Fitness Guide">
+
+  <div class="section">
+    <div class="kicker">GRATIS GUIDE</div>
+    <h1><span data-de>Die 3 Säulen für deinen Erfolg</span><span data-en>The 3 pillars of your success</span></h1>
+    <p class="lead">
+      <span data-de>Trage dich mit Name und E-Mail-Adresse ein und erhalte sofort meinen kostenlosen Guide zu Training, Ernährung &amp; Disziplin.</span>
+      <span data-en>Enter your name and email address and get instant access to my free guide on training, nutrition &amp; discipline.</span>
+    </p>
+  </div>
+
+  <div class="light-section">
+    <form action="https://formsubmit.co/athletv12@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Neue Anmeldung – Kostenloser Fitness Guide">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="guide-danke.html">
+      <input type="text" name="_honey" class="hidden-honeypot" tabindex="-1" autocomplete="off">
+
+      <div class="section" style="padding-top:24px;">
+        <div class="field">
+          <label><span data-de>Vor- und Nachname</span><span data-en>Full name</span> <span class="req">*</span></label>
+          <input type="text" name="Name" required>
+        </div>
+        <div class="field">
+          <label><span data-de>E-Mail-Adresse</span><span data-en>Email address</span> <span class="req">*</span></label>
+          <input type="email" name="Email" required>
+        </div>
+        <div class="submit-row">
+          <button type="submit" class="btn-primary">
+            <span data-de>Guide kostenlos erhalten</span><span data-en>Get the free guide</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="assets/lang.js"></script>
+</body>
+</html>

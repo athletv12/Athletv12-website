@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danke — athletv12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="lang-toggle">
+  <button data-lang="de" class="active" onclick="setLang('de')">DE</button>
+  <button data-lang="en" onclick="setLang('en')">EN</button>
+</div>
+
+<div class="phone">
+  <div class="confirm-box">
+    <div class="check-circle">&#10003;</div>
+    <h1 style="font-size:22px; margin-bottom:10px;">
+      <span data-de>Danke für deine Anfrage!</span>
+      <span data-en>Thanks for your request!</span>
+    </h1>
+    <p style="color:var(--text-muted); font-size:14.5px; line-height:1.6; margin-bottom:28px;">
+      <span data-de>Ich habe deine Angaben erhalten und melde mich so schnell wie möglich persönlich bei dir.</span>
+      <span data-en>I've received your details and will get back to you personally as soon as possible.</span>
+    </p>
+    <a class="btn-primary" href="index.html">
+      <span data-de>Zurück zur Startseite</span>
+      <span data-en>Back to homepage</span>
+    </a>
+  </div>
+</div>
+
+<script src="assets/lang.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coaching Anfrage — athletv12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="lang-toggle">
+  <button data-lang="de" class="active" onclick="setLang('de')">DE</button>
+  <button data-lang="en" onclick="setLang('en')">EN</button>
+</div>
+
+<div class="phone">
+  <div class="back-bar">
+    <a href="index.html">&#8249;</a>
+    <span data-de>Coaching Anfrage</span>
+    <span data-en>Coaching Request</span>
+  </div>
+
+  <div class="section">
+    <div class="kicker">COACHING</div>
+    <h1><span data-de>Erzähl mir von dir</span><span data-en>Tell me about you</span></h1>
+    <p class="lead">
+      <span data-de>Damit ich dir einen wirklich individuellen Plan erstellen kann, brauche ich ein paar Infos. Felder mit <b>*</b> sind Pflichtfelder.</span>
+      <span data-en>So I can build a truly individual plan for you, I need some information. Fields marked with <b>*</b> are required.</span>
+    </p>
+  </div>
+
+  <div class="light-section">
+    <form action="https://formsubmit.co/athletv12@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_subject" value="Neue Coaching-Anfrage — athletv12">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="danke.html">
+      <input type="text" name="_honey" class="hidden-honeypot" tabindex="-1" autocomplete="off">
+
+      <div class="section" style="padding-top:24px;">
+
+        <div class="field">
+          <label><span data-de>Vor- und Nachname</span><span data-en>Full name</span> <span class="req">*</span></label>
+          <input type="text" name="Vor_und_Nachname" required>
+        </div>
+        <div class="field">
+          <label><span data-de>Alter</span><span data-en>Age</span> <span class="req">*</span></label>
+          <input type="number" min="14" max="99" name="Alter" required>
+        </div>
+        <div class="field">
+          <label><span data-de>Größe (cm)</span><span data-en>Height (cm)</span> <span class="req">*</span></label>
+          <input type="number" min="120" max="230" name="Groesse_cm" required>
+        </div>
+        <div class="field">
+          <label><span data-de>Aktuelles Gewicht (kg)</span><span data-en>Current weight (kg)</span> <span class="req">*</span></label>
+          <input type="number" min="30" max="300" step="0.1" name="Gewicht_kg" required>
+        </div>
+        <div class="field">
+          <label><span data-de>E-Mail-Adresse</span><span data-en>Email address</span> <span class="req">*</span></label>
+          <input type="email" name="Email" required>
+        </div>
+        <div class="field">
+          <label><span data-de>Telefonnummer</span><span data-en>Phone number</span> <span class="req">*</span></label>
+          <input type="tel" name="Telefon" required>
+        </div>
+
+        <div class="form-section-title"><span data-de>Beruf</span><span data-en>Occupation</span></div>
+        <div class="field opt-group">
+          <div class="opt"><input type="radio" name="Beruf_Belastung" id="b1" value="Ueberwiegend sitzend"><label for="b1"><span data-de>Überwiegend sitzend</span><span data-en>Mostly sedentary</span></label></div>
+          <div class="opt"><input type="radio" name="Beruf_Belastung" id="b2" value="Teilweise koerperlich aktiv"><label for="b2"><span data-de>Teilweise körperlich aktiv</span><span data-en>Partly physically active</span></label></div>
+          <div class="opt"><input type="radio" name="Beruf_Belastung" id="b3" value="Koerperlich anspruchsvoll"><label for="b3"><span data-de>Körperlich anspruchsvoll</span><span data-en>Physically demanding</span></label></div>
+        </div>
+
+        <div class="form-section-title"><span data-de>Dein Ziel</span><span data-en>Your goal</span></div>
+        <label><span data-de>Was ist dein Hauptziel?</span><span data-en>What is your main goal?</span></label>
+        <div class="field opt-group" style="margin-top:8px;">
+          <div class="opt"><input type="checkbox" name="Ziel_Fett_verlieren" id="z1" value="Fett verlieren"><label for="z1"><span data-de>Fett verlieren</span><span data-en>Lose fat</span></label></div>
+          <div class="opt"><input type="checkbox" name="Ziel_Muskeln_aufbauen" id="z2" value="Muskeln aufbauen"><label for="z2"><span data-de>Muskeln aufbauen</span><span data-en>Build muscle</span></label></div>
+          <div class="opt"><input type="checkbox" name="Ziel_Straffer_werden" id="z3" value="Straffer werden"><label for="z3"><span data-de>Straffer werden</span><span data-en>Get toned</span></label></div>
+          <div class="opt"><input type="checkbox" name="Ziel_Leistungssteigerung" id="z4" value="Leistungssteigerung"><label for="z4"><span data-de>Leistungssteigerung</span><span data-en>Improve performance</span></label></div>
+          <div class="opt"><input type="checkbox" name="Ziel_Allgemeine_Fitness" id="z5" value="Allgemeine Fitness verbessern"><label for="z5"><span data-de>Allgemeine Fitness verbessern</span><span data-en>Improve general fitness</span></label></div>
+        </div>
+
+        <div class="field" style="margin-top:16px;">
+          <label><span data-de>Beschreibe dein Ziel in deinen eigenen Worten.</span><span data-en>Describe your goal in your own words.</span></label>
+          <textarea name="Ziel_Beschreibung"></textarea>
+        </div>
+
+        <div class="field">
+          <label><span data-de>Wie wichtig ist dir dieses Ziel? (1&ndash;10)</span><span data-en>How important is this goal to you? (1&ndash;10)</span></label>
+          <div class="scale-row" id="scale-wichtigkeit"></div>
+        </div>
+
+        <div class="form-section-title">Training</div>
+        <div class="field">
+          <label><span data-de>Trainierst du aktuell?</span><span data-en>Do you currently train?</span></label>
+          <div class="opt-group">
+            <div class="opt"><input type="radio" name="Trainiert_aktuell" id="t1" value="Ja"><label for="t1"><span data-de>Ja</span><span data-en>Yes</span></label></div>
+            <div class="opt"><input type="radio" name="Trainiert_aktuell" id="t2" value="Nein"><label for="t2"><span data-de>Nein</span><span data-en>No</span></label></div>
+          </div>
+        </div>
+        <div class="field">
+          <label><span data-de>Wie viele Trainingseinheiten pro Woche sind realistisch für dich?</span><span data-en>How many training sessions per week are realistic for you?</span></label>
+          <div class="opt-group">
+            <div class="opt"><input type="radio" name="Einheiten_pro_Woche" id="e1" value="2"><label for="e1">2</label></div>
+            <div class="opt"><input type="radio" name="Einheiten_pro_Woche" id="e2" value="3"><label for="e2">3</label></div>
+            <div class="opt"><input type="radio" name="Einheiten_pro_Woche" id="e3" value="4"><label for="e3">4</label></div>
+            <div class="opt"><input type="radio" name="Einheiten_pro_Woche" id="e4" value="5 oder mehr"><label for="e4"><span data-de>5 oder mehr</span><span data-en>5 or more</span></label></div>
+          </div>
+        </div>
+        <div class="field">
+          <label><span data-de>Wo trainierst du?</span><span data-en>Where do you train?</span></label>
+          <div class="opt-group">
+            <div class="opt"><input type="radio" name="Trainingsort" id="o1" value="Fitnessstudio"><label for="o1"><span data-de>Fitnessstudio</span><span data-en>Gym</span></label></div>
+            <div class="opt"><input type="radio" name="Trainingsort" id="o2" value="Zuhause"><label for="o2"><span data-de>Zuhause</span><span data-en>At home</span></label></div>
+            <div class="opt"><input type="radio" name="Trainingsort" id="o3" value="Beides"><label for="o3"><span data-de>Beides</span><span data-en>Both</span></label></div>
+          </div>
+        </div>
+        <div class="field">
+          <label><span data-de>Wie würdest du deine Trainingserfahrung einschätzen?</span><span data-en>How would you rate your training experience?</span></label>
+          <div class="opt-group">
+            <div class="opt"><input type="radio" name="Trainingserfahrung" id="x1" value="Anfaenger"><label for="x1"><span data-de>Anfänger</span><span data-en>Beginner</span></label></div>
+            <div class="opt"><input type="radio" name="Trainingserfahrung" id="x2" value="Fortgeschritten"><label for="x2"><span data-de>Fortgeschritten</span><span data-en>Advanced</span></label></div>
+            <div class="opt"><input type="radio" name="Trainingserfahrung" id="x3" value="Sehr erfahren"><label for="x3"><span data-de>Sehr erfahren</span><span data-en>Very experienced</span></label></div>
+          </div>
+        </div>
+
+        <div class="form-section-title"><span data-de>Gesundheit</span><span data-en>Health</span></div>
+        <div class="field">
+          <label><span data-de>Gibt es Verletzungen, Schmerzen oder gesundheitliche Einschränkungen, die ich kennen sollte?</span><span data-en>Are there any injuries, pain or health limitations I should know about?</span></label>
+          <textarea name="Verletzungen_Einschraenkungen"></textarea>
+        </div>
+        <div class="field">
+          <label><span data-de>Nimmst du regelmäßig Medikamente?</span><span data-en>Do you regularly take medication?</span></label>
+          <div class="opt-group">
+            <div class="opt"><input type="radio" name="Medikamente" id="m1" value="Nein"><label for="m1"><span data-de>Nein</span><span data-en>No</span></label></div>
+            <div class="opt"><input type="radio" name="Medikamente" id="m2" value="Ja"><label for="m2"><span data-de>Ja</span><span data-en>Yes</span></label></div>
+          </div>
+        </div>
+        <div class="field" id="med-details" style="display:none;">
+          <label><span data-de>Falls ja, welche?</span><span data-en>If yes, which ones?</span></label>
+          <textarea name="Medikamente_welche"></textarea>
+        </div>
+
+        <div class="form-section-title"><span data-de>Ernährung</span><span data-en>Nutrition</span></div>
+        <div class="field">
+          <label><span data-de>Wie würdest du deine aktuelle Ernährung beschreiben?</span><span data-en>How would you describe your current diet?</span></label>
+          <div class="opt-group">
+            <div class="opt"><input type="radio" name="Ernaehrung_Einschaetzung" id="n1" value="Sehr ausgewogen"><label for="n1"><span data-de>Sehr ausgewogen</span><span data-en>Very balanced</span></label></div>
+            <div class="opt"><input type="radio" name="Ernaehrung_Einschaetzung" id="n2" value="Eher ausgewogen"><label for="n2"><span data-de>Eher ausgewogen</span><span data-en>Fairly balanced</span></label></div>
+            <div class="opt"><input type="radio" name="Ernaehrung_Einschaetzung" id="n3" value="Verbesserungswuerdig"><label for="n3"><span data-de>Verbesserungswürdig</span><span data-en>Needs improvement</span></label></div>
+            <div class="opt"><input type="radio" name="Ernaehrung_Einschaetzung" id="n4" value="Ungesund"><label for="n4"><span data-de>Ungesund</span><span data-en>Unhealthy</span></label></div>
+          </div>
+        </div>
+        <div class="field">
+          <label><span data-de>Gibt es Allergien, Unverträglichkeiten oder Lebensmittel, die du nicht isst?</span><span data-en>Any allergies, intolerances or foods you don't eat?</span></label>
+          <textarea name="Allergien_Unvertraeglichkeiten"></textarea>
+        </div>
+        <div class="field">
+          <label><span data-de>Wie viele Liter Wasser trinkst du durchschnittlich pro Tag?</span><span data-en>How many litres of water do you drink per day on average?</span></label>
+          <div class="opt-group">
+            <div class="opt"><input type="radio" name="Wasser_pro_Tag" id="w1" value="Unter 1 Liter"><label for="w1"><span data-de>Unter 1 Liter</span><span data-en>Less than 1L</span></label></div>
+            <div class="opt"><input type="radio" name="Wasser_pro_Tag" id="w2" value="1-2 Liter"><label for="w2">1&ndash;2 L</label></div>
+            <div class="opt"><input type="radio" name="Wasser_pro_Tag" id="w3" value="2-3 Liter"><label for="w3">2&ndash;3 L</label></div>
+            <div class="opt"><input type="radio" name="Wasser_pro_Tag" id="w4" value="Mehr als 3 Liter"><label for="w4"><span data-de>Mehr als 3 Liter</span><span data-en>More than 3L</span></label></div>
+          </div>
+        </div>
+
+        <div class="form-section-title"><span data-de>Alltag</span><span data-en>Daily life</span></div>
+        <div class="field">
+          <label><span data-de>Wie viele Stunden schläfst du durchschnittlich pro Nacht?</span><span data-en>How many hours do you sleep per night on average?</span></label>
+          <div class="opt-group">
+            <div class="opt"><input type="radio" name="Schlaf_Stunden" id="s1" value="Unter 6 Stunden"><label for="s1"><span data-de>Unter 6 Std.</span><span data-en>Less than 6h</span></label></div>
+            <div class="opt"><input type="radio" name="Schlaf_Stunden" id="s2" value="6-7 Stunden"><label for="s2">6&ndash;7 Std.</label></div>
+            <div class="opt"><input type="radio" name="Schlaf_Stunden" id="s3" value="7-8 Stunden"><label for="s3">7&ndash;8 Std.</label></div>
+            <div class="opt"><input type="radio" name="Schlaf_Stunden" id="s4" value="Mehr als 8 Stunden"><label for="s4"><span data-de>Mehr als 8 Std.</span><span data-en>More than 8h</span></label></div>
+          </div>
+        </div>
+        <div class="field">
+          <label><span data-de>Wie hoch ist dein aktuelles Stresslevel? (1&ndash;10)</span><span data-en>How high is your current stress level? (1&ndash;10)</span></label>
+          <div class="scale-row" id="scale-stress"></div>
+        </div>
+
+        <div class="form-section-title">Motivation</div>
+        <div class="field">
+          <label><span data-de>Warum möchtest du dein Ziel unbedingt erreichen?</span><span data-en>Why do you really want to reach your goal?</span></label>
+          <textarea name="Warum_Ziel_erreichen"></textarea>
+        </div>
+        <div class="field">
+          <label><span data-de>Was war bisher dein größtes Hindernis?</span><span data-en>What has been your biggest obstacle so far?</span></label>
+          <textarea name="Groesstes_Hindernis"></textarea>
+        </div>
+
+        <div class="form-section-title"><span data-de>Abschluss</span><span data-en>Final questions</span></div>
+        <div class="field">
+          <label><span data-de>Gibt es noch etwas, das ich über dich wissen sollte?</span><span data-en>Is there anything else I should know about you?</span></label>
+          <textarea name="Sonstiges"></textarea>
+        </div>
+
+        <div class="form-section-title">
+          <span data-de>&#128248; Fortschrittsfotos</span><span data-en>&#128248; Progress photos</span>
+        </div>
+        <p class="form-note">
+          <span data-de>Bitte sende zusätzlich: aktuelles Frontbild, Seitenbild und Rückenbild. Optional: Bauchumfang auf Nabelhöhe.</span>
+          <span data-en>Please also send: a current front, side and back photo. Optional: waist circumference at navel height.</span>
+        </p>
+        <div class="field">
+          <label><span data-de>Frontbild</span><span data-en>Front photo</span></label>
+          <input type="file" name="Frontbild" accept="image/*">
+        </div>
+        <div class="field">
+          <label><span data-de>Seitenbild</span><span data-en>Side photo</span></label>
+          <input type="file" name="Seitenbild" accept="image/*">
+        </div>
+        <div class="field">
+          <label><span data-de>Rückenbild</span><span data-en>Back photo</span></label>
+          <input type="file" name="Rueckenbild" accept="image/*">
+        </div>
+        <div class="field">
+          <label><span data-de>Bauchumfang (cm, optional)</span><span data-en>Waist circumference (cm, optional)</span></label>
+          <input type="number" step="0.1" name="Bauchumfang_cm">
+        </div>
+
+        <div class="submit-row">
+          <button type="submit" class="btn-primary">
+            <span data-de>Anfrage absenden</span><span data-en>Send request</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="assets/lang.js"></script>
+<script>
+  var wichtigkeit = document.getElementById('scale-wichtigkeit');
+  var stress = document.getElementById('scale-stress');
+  for (var i=1;i<=10;i++){
+    wichtigkeit.insertAdjacentHTML('beforeend', '<div class="opt"><input type="radio" name="Wichtigkeit_Ziel" id="wi'+i+'" value="'+i+'"><label for="wi'+i+'">'+i+'</label></div>');
+    stress.insertAdjacentHTML('beforeend', '<div class="opt"><input type="radio" name="Stresslevel" id="st'+i+'" value="'+i+'"><label for="st'+i+'">'+i+'</label></div>');
+  }
+  document.querySelectorAll('input[name=Medikamente]').forEach(function(r){
+    r.addEventListener('change', function(){
+      document.getElementById('med-details').style.display = (this.value === 'Ja') ? 'block' : 'none';
+    });
+  });
+</script>
+</body>
+</html>

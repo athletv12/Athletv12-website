@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danke — athletv12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="lang-toggle">
+  <button data-lang="de" class="active" onclick="setLang('de')">DE</button>
+  <button data-lang="en" onclick="setLang('en')">EN</button>
+</div>
+
+<div class="phone">
+  <div class="confirm-box">
+    <div class="check-circle">&#10003;</div>
+    <h1 style="font-size:22px; margin-bottom:10px;">
+      <span data-de>Danke für deine Anmeldung!</span>
+      <span data-en>Thanks for signing up!</span>
+    </h1>
+    <p style="color:var(--text-muted); font-size:14.5px; line-height:1.6; margin-bottom:28px;">
+      <span data-de>Dein kostenloser Fitness Guide ist bereit zum Download.</span>
+      <span data-en>Your free fitness guide is ready to download.</span>
+    </p>
+    <a class="btn-primary" href="assets/Kostenloser-Fitness-Guide-ATHLETV12.pdf" download>
+      <span data-de>&#8681; Guide herunterladen</span>
+      <span data-en>&#8681; Download guide</span>
+    </a>
+    <div style="margin-top:22px;">
+      <a href="index.html" style="color:var(--text-muted); font-size:13.5px; text-decoration:underline;">
+        <span data-de>Zurück zur Startseite</span>
+        <span data-en>Back to homepage</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="assets/lang.js"></script>
+</body>
+</html>
