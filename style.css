@@ -49,7 +49,7 @@ h1,h2,h3,.headline{ font-family:'Poppins', sans-serif; }
 .top-pad{ padding: 48px 24px 24px; display:flex; flex-direction:column; align-items:center; text-align:center; }
 .avatar-ring{ width:210px; height:210px; border-radius:50%; padding:4px;
   background: rgba(255,255,255,0.5); margin-bottom:20px; box-shadow: 0 12px 30px rgba(15,25,50,0.25); }
-.avatar-ring img{ width:100%; height:100%; border-radius:50%; object-fit:cover; object-position: top center; display:block; }
+.avatar-ring img{ width:100%; height:100%; border-radius:50%; object-fit:cover; object-position: center; display:block; }
 .name{ font-family:'Poppins', sans-serif; font-weight:700; font-size:26px; letter-spacing:.01em; }
 .tagline{ color:var(--text-muted); font-size:14px; margin-top:8px; line-height:1.5; max-width:320px; }
 
@@ -69,7 +69,7 @@ h1,h2,h3,.headline{ font-family:'Poppins', sans-serif; }
   transition: border-color .2s, transform .15s, background .2s;
 }
 .chapter-btn:hover{ border-color: rgba(255,255,255,0.55); transform: translateY(-1px); background: rgba(255,255,255,0.16); }
-.chapter-btn .thumb{ width:76px; height:76px; border-radius:16px; object-fit:cover; flex-shrink:0; }
+.chapter-btn .thumb{ width:76px; height:76px; border-radius:16px; object-fit:cover; object-position: center; flex-shrink:0; }
 .chapter-btn .label{ flex:1; min-width:0; }
 .chapter-btn .title{ font-family:'Poppins',sans-serif; font-weight:700; font-size:16.5px; margin-bottom:4px; }
 .chapter-btn .desc{ font-size:12.8px; line-height:1.45; color:var(--text-muted); }
